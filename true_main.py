@@ -40,7 +40,7 @@ def main():
 
         for wallet in wallets:
             tokens = fetch_token_count(wallet)
-            if tokens < 200:
+            if tokens < 0 or tokens * 5.5970149254 < 200:
                 tokens = 0
             else:
                 tokens = int(tokens * 5.5970149254)
