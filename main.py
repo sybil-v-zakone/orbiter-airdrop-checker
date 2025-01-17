@@ -1,7 +1,6 @@
 import requests
 import json
 
-# Функция для выполнения запроса по адресу кошелька
 def fetch_token_count(wallet_address):
     url = f"https://api.orbiter.finance/sdk/opoints/user/{wallet_address}"
     headers = {
